@@ -1,10 +1,12 @@
 import styles from './index.module.scss'
 import info from "../../info.js"
 import {Selection} from "../../components/selection";
+import useChangePage from "../../hooks/useChangePage.js";
 
 export const SelectionsPage = () => {
+    const ref = useChangePage(1)
     return(
-      <div className={styles.root}>
+      <div id='selections' ref={ref} className={styles.root}>
           <h1  className={styles.title}>My Tech</h1>
           <div className={styles.container}>
               {

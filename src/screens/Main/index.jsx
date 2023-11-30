@@ -2,11 +2,16 @@ import styles from './index.module.scss'
 import {Avalible} from "../../components/avalible";
 import {Button} from "../../components/button";
 import info from "../../info.js"
+import {useEffect, useRef} from "react";
+import {useDispatch} from "react-redux";
+import {changeActiveLi} from "../../store/animSlice.js";
+import useChangePage from "../../hooks/useChangePage.js";
 
 export const Main = () => {
+    const ref = useChangePage(0)
     return(
-      <div className={styles.root}>
-          <div className={styles.page}>
+      <div id='main' className={styles.root}>
+          <div ref={ref} className={styles.page}>
               <div className={styles.container}>
                   <div  className={styles.blur}>
                   </div>

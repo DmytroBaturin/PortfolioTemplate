@@ -4,15 +4,18 @@ import { Project } from "../../components/project";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import {Navigation} from "swiper/modules"; // Scrollbar module
+import {Navigation} from "swiper/modules";
+import useChangePage from "../../hooks/useChangePage.js"; // Scrollbar module
 
 export const ProjectsPage = () => {
+    const ref = useChangePage(2)
     return (
-        <div className={styles.root}>
+        <div id='projects'  className={styles.root}>
             <div className={styles.title}>
-                <h1>My projects</h1>
+                <h1  >My projects</h1>
             </div>
             <Swiper
+                ref={ref}
                 modules={[Navigation]}
                 className={styles.container}
                 navigation
@@ -21,7 +24,7 @@ export const ProjectsPage = () => {
             >
                 {Object.values(info.myprojects).map((project, i) => (
                     <SwiperSlide key={i}>
-                        <Project {...project} />
+                        <Project  {...project} />
                     </SwiperSlide>
                 ))}
             </Swiper>

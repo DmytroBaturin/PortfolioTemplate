@@ -3,7 +3,6 @@ import {Button} from "../button";
 
 export const Project = ({title, description, stack, link}) => {
   return(
-
       <div className={styles.root}>
          <div className={styles.container}>
              <a target='_blank' href={link}>

@@ -8,7 +8,6 @@ const animSlice = createSlice({
     reducers: {
         changeActiveLi: (state, action) => {
             state.page = action.payload.page;
-            console.log(action.payload.page);
         }
     }
 })

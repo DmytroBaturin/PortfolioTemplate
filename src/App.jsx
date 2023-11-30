@@ -11,14 +11,13 @@ function App() {
     useEffect(() => {
         window.scrollTo(0, 0);
         const canvas = document.getElementById('dotCanvas');
-        const root = document.querySelector('.root');
         const context = canvas.getContext('2d');
         function getDocumentWidth() {
             return Math.max(document.documentElement.clientWidth || 0);
         };
 
         function getDocumentHeight() {
-            return Math.max(root.clientHeight || 0)
+            return Math.max(document.body.clientHeight || 0)
         };
 
         let vw = getDocumentWidth(),
