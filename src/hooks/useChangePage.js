@@ -1,7 +1,7 @@
 // hooks/useChangePage.js
 import { useEffect, useRef } from 'react';
 import { useDispatch } from 'react-redux';
-import { changeActiveLi } from "../store/animSlice.js";
+import { changeActiveLi } from "../store/haederSlice.js";
 
 const useChangePage = (page) => {
     const ref = useRef(null);

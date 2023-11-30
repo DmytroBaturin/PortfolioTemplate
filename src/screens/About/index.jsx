@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import styles from './index.module.scss';
 import info from "../../info.js";
 import {useDispatch} from "react-redux";
-import {changeActiveLi} from "../../store/animSlice.js";
+import {changeActiveLi} from "../../store/haederSlice.js";
 import useChangePage from "../../hooks/useChangePage.js";
 
 export const About = () => {

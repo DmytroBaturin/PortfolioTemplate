@@ -1,7 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit'
-import animSlice from "./animSlice.js";
+import headerSlice from "./haederSlice.js";
 export const store = configureStore({
     reducer: {
-        anim: animSlice
+        anim: headerSlice
     },
 })
