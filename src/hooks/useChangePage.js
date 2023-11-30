@@ -1,17 +1,16 @@
-// hooks/useChangePage.js
 import { useEffect, useRef } from 'react';
 import { useDispatch } from 'react-redux';
-import { changeActiveLi } from "../store/haederSlice.js";
+import { changeActiveLi } from "../store/headerSlice.js";
 
 const useChangePage = (page) => {
     const ref = useRef(null);
     const dispatch = useDispatch();
 
-    useEffect(() => {; // Масив з 100 значень від 0 до 1
+    useEffect(() => {;
         const options = {
             root: null,
-            rootMargin: '0px',
-            threshold: 0.3// Використання масиву threshold
+            rootMargin: '-100px',
+            threshold: 0.3
         };
 
         const callback = (entries) => {
@@ -35,7 +34,7 @@ const useChangePage = (page) => {
                 observer.unobserve(ref.current);
             }
         };
-    }, [dispatch, page]); // Ви повинні також включити thresholds в залежності, якщо вони будуть динамічно змінюватись
+    }, [dispatch, page]);
 
     return ref;
 };

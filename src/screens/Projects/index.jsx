@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import {Navigation} from "swiper/modules";
-import useChangePage from "../../hooks/useChangePage.js"; // Scrollbar module
+import useChangePage from "../../hooks/useChangePage.js";
 
 export const ProjectsPage = () => {
     const ref = useChangePage(2)

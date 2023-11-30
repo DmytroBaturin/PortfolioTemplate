@@ -1,14 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react';
 import styles from './index.module.scss';
 import info from "../../info.js";
-import {useDispatch} from "react-redux";
-import {changeActiveLi} from "../../store/haederSlice.js";
 import useChangePage from "../../hooks/useChangePage.js";
 
 export const About = () => {
     const [visible, setVisible] = useState(false);
     const containerRef = useRef(null);
     const ref = useChangePage(3)
+
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
             if (entries[0].isIntersecting) {

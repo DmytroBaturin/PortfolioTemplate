@@ -1,6 +1,5 @@
 .root {
   display: flex;
-  margin-bottom: 10vh;
   flex-direction: column;
   height: max-content;
   p{
@@ -11,7 +10,6 @@
   }
 }
 .container{
-  height: 400px;
   margin: 0 auto;
   display: flex;
   justify-content: center;

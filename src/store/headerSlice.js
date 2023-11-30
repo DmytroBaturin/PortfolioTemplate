@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-const haederSlice = createSlice({
+const headerSlice = createSlice({
     name: 'animation',
     initialState: {
         page: 0,
@@ -12,5 +12,5 @@ const haederSlice = createSlice({
     }
 })
 
-export const { changeActiveLi } = haederSlice.actions
-export default haederSlice.reducer
+export const { changeActiveLi } = headerSlice.actions
+export default headerSlice.reducer

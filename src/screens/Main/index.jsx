@@ -4,7 +4,7 @@ import {Button} from "../../components/button";
 import info from "../../info.js"
 import {useEffect, useRef} from "react";
 import {useDispatch} from "react-redux";
-import {changeActiveLi} from "../../store/haederSlice.js";
+import {changeActiveLi} from "../../store/headerSlice.js";
 import useChangePage from "../../hooks/useChangePage.js";
 
 export const Main = () => {
