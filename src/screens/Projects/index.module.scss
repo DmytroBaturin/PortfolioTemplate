@@ -1,0 +1,17 @@
+.root{
+  display: flex;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  flex-direction: column;
+  width: 100%;
+}
+.container{
+
+}
+.projects{
+  overflow-x: auto;
+  flex-shrink: 0;
+  margin-top: 5vh;
+  display: flex;
+  gap: 20px;
+}

@@ -1,0 +1,24 @@
+.circle{
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(89, 183, 75, 0.34);
+  div{
+    width: 10px;
+    border-radius: 50%;
+    background: #5fb74b;
+    height: 10px;
+  }
+}
+.root{
+  border-radius: 20px;
+  width: fit-content;
+  padding: 5px 20px;
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}

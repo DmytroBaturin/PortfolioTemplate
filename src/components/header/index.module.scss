@@ -1,0 +1,36 @@
+.root {
+  z-index: 100;
+  position: fixed;
+  left: auto;
+  right: auto;
+  max-width: 915px;
+  width: 100%;
+  margin: 20px auto;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+
+.header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.header nav li {
+  text-decoration: none;
+  list-style: none;
+}
+
+@media screen and (max-width: 768px) {
+  .root{
+  }
+  .header{
+    nav{
+      gap: 20px;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.root{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  width: 275px;
+  height: 274px;
+  justify-content: space-around;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.01);
+  transition: background 0.2s ease-in-out, transform 0.2s ease-in-out;
+  will-change: transform;
+  &:hover{
+    background: rgba(255, 255, 255, 0.05);
+    transform: translate(0, -3px);
+  }
+}
+
+.container {
+ align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px
+}

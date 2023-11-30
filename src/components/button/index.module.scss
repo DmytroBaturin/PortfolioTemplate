@@ -1,0 +1,15 @@
+.root{
+  display: flex;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  border: none;
+  padding: 7px 25px;
+  align-items: center;
+  gap: 10px;
+  transition: background 0.2s ease-in-out;
+  will-change: background;
+  cursor: pointer;
+  &:hover{
+    background: rgba(255, 255, 255, 0.1);
+  }
+}
