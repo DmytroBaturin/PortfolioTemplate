@@ -2,6 +2,15 @@
   display: flex;
   position: relative;
   top: -40px;
-  margin-top: 10vh;
   justify-content: center;
+}
+@media (max-width: 768px){
+  .root{
+    margin-top: 25vh;
+  }
+}
+@media (max-width: 380px){
+  .root{
+    margin-top: 55vh;
+  }
 }
