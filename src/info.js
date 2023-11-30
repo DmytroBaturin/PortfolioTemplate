@@ -11,12 +11,12 @@ const info = {
         },
         linkedIn: {
             text: 'LinkedIn',
-            link: 'https://github.com/DmytroBaturin',
+            link: 'https://www.linkedin.com/in/dmytro-baturin/',
             img: `${linkButton}linkedin.svg`,
         },
         mail: {
             text: 'Mail',
-            link: 'https://github.com/DmytroBaturin',
+            link: 'https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCHrkWHsnVWKQVnGLJSzmBgGZnNCfqDgZTdHBJpWmsxjXScfDnvsbwwMLvHwvwKZhcmdtzMg',
             img: `${linkButton}mail.svg`,
         },
     },
