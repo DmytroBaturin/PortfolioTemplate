@@ -1,10 +1,12 @@
 import styles from './index.module.scss'
 import {Button} from "../button";
 
-export const Project = ({title, description, stack}) => {
+export const Project = ({title, description, stack, link}) => {
   return(
+
       <div className={styles.root}>
          <div className={styles.container}>
+             <a target='_blank' href={link}>
              <div className={styles.textcontainer}>
                  <div className={styles.link}>
                      <div className={styles.title}>
@@ -25,7 +27,9 @@ export const Project = ({title, description, stack}) => {
                  ))
              }
              </div>
+             </a>
          </div>
       </div>
+
   )
 }

@@ -4,11 +4,11 @@ import {Button} from "../../components/button";
 import info from "../../info.js"
 
 export const Main = () => {
-  return(
+    return(
       <div className={styles.root}>
           <div className={styles.page}>
               <div className={styles.container}>
-                  <div className={styles.blur}>
+                  <div  className={styles.blur}>
                   </div>
                   <Avalible/>
                   <div className={styles.title}>
@@ -19,6 +19,7 @@ export const Main = () => {
                          <Button
                              text={button.text}
                              img={button.img}
+                             link={button.link}
                          />
                      ))
 

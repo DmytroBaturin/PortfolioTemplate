@@ -1,8 +1,8 @@
 .root {
   display: flex;
-
   margin-bottom: 20vh;
   flex-direction: column;
+  height: max-content;
   p{
     font-weight: 300;
     margin-top: 10vh;
@@ -11,7 +11,26 @@
   }
 }
 .container{
+  height: 400px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
+}
+@media screen  and (max-width: 768px){
+  .root{
+    p{
+      width: 80%;
+    }
+  }
+}
+
+.container p span {
+  opacity: 0;
+  transform: translateY(-100px);
+  transition: all 0.3s ease;
+}
+
+.container p span.fall {
+  opacity: 1;
+  transform: translateY(0);
 }

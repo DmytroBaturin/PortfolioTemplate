@@ -3,18 +3,20 @@ import info from "../../info.js"
 import {Selection} from "../../components/selection";
 
 export const SelectionsPage = () => {
-  return(
+    return(
       <div className={styles.root}>
-          <h1 className={styles.title}>My Tech</h1>
+          <h1  className={styles.title}>My Tech</h1>
           <div className={styles.container}>
-          {
-              Object.values(info.skills).map(skill => (
-                  <Selection
-                      name={skill.name}
-                      img={skill.img}
-                  />
-              ))
-          }
+              {
+                  Object.values(info.skills).map((skill, index) => (
+                      <div key={index}>
+                          <Selection
+                              name={skill.name}
+                              img={skill.img}
+                          />
+                      </div>
+                  ))
+              }
           <div className={styles.containerplus}>
           <h1>What i can else
               is to make a good design, as far as I'm concerned...</h1>

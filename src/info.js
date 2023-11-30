@@ -83,7 +83,7 @@ const info = {
         forum: {
             title: 'Forum',
             description: 'My Forum project using a [SASS, JS, MongoDB, React, ReduxTK, Express, Node JS, NPM, Docker], with session auth 👀',
-            link: '',
+            link: 'https://github.com/DmytroBaturin/Forum',
             stack: [
                 'Router', 'Sass', 'MongoDB', 'Docker', 'ReduxTK', 'React', 'Express'
             ]
@@ -91,7 +91,7 @@ const info = {
         oranizer: {
             title: 'Oranizer',
             description: 'This is a web-based organizer application developed with mockapi for backend simulation. Designed to be responsive, it efficiently works across various devices.',
-            link: '',
+            link: 'https://github.com/DmytroBaturin/Organizer',
             stack: [
                 'Router','Sass', 'ReduxTK', 'React', 'MockApi'
             ]
@@ -99,7 +99,7 @@ const info = {
         ukland: {
             title: 'UKLAND',
             description: 'Site for minecraft server, first e-commerce project, with my design',
-            link: '',
+            link: 'https://ukland.net/',
             stack: [
                 'Router','Sass','ReduxTK', 'React', 'UI/UX'
             ]

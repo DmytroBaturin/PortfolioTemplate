@@ -2,14 +2,20 @@
   display: flex;
   width: fit-content;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 3px;
+  button{
+    padding: 5px 10px;
+  }
 }
 .root{
+  margin: 0 auto;
+  justify-content: center;
+  backdrop-filter: blur(10px);
   flex-shrink: 0;
   cursor: pointer;
   border-radius: 20px;
   width: 50%;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.01);
   &:hover{
     svg{
       opacity: 1;
@@ -59,5 +65,26 @@
     bottom: 4px;
     height: 1px;
     background: #ffffff;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .root{
+    width: 70%;
+  }
+  .title{
+    font-size: 12px;
+  }
+  .link{
+    display: flex;
+    svg{
+      width: 15px;
+    }
+  }
+  .textcontainer{
+    p{
+      width: 100%;
+      font-size: 14px;
+    }
   }
 }
