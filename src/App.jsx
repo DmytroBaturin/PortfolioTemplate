@@ -4,20 +4,22 @@ import {Main} from "./screens/Main";
 import {SelectionsPage} from "./screens/Selections/index.jsx";
 import {ProjectsPage} from "./screens/Projects";
 import {About} from "./screens/About";
-import {useEffect} from "react";
+import {useEffect, useState} from "react";
 import {Footer} from "./components/footer";
 
 function App() {
+
     useEffect(() => {
         window.scrollTo(0, 0);
         const canvas = document.getElementById('dotCanvas');
+
         const context = canvas.getContext('2d');
         function getDocumentWidth() {
             return Math.max(document.documentElement.clientWidth || 0);
         };
 
         function getDocumentHeight() {
-            return Math.max(document.body.clientHeight || 0)
+            return Math.max(document.documentElement.clientHeight || 0)
         };
 
         let vw = getDocumentWidth(),
@@ -50,7 +52,7 @@ function App() {
             }
         }
         drawDots();
-    });
+    }, []);
 
     return (
         <div className="root">
@@ -73,6 +75,7 @@ function App() {
                 <About/>
                 <Footer/>
             </div>
+
         </div>
     )
 }

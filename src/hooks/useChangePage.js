@@ -16,7 +16,6 @@ const useChangePage = (page) => {
         const callback = (entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    console.log(entry)
                     dispatch(changeActiveLi({
                         page: page,
                     }))
