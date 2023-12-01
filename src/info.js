@@ -95,7 +95,7 @@ const info = {
             ]
         },
         oranizer: {
-            title: 'Oranizer',
+            title: 'Organizer',
             description: 'This is a web-based organizer application developed with mockapi for backend simulation. Designed to be responsive, it efficiently works across various devices.',
             link: 'https://github.com/DmytroBaturin/Organizer',
             stack: [
