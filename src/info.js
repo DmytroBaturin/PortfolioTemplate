@@ -109,6 +109,14 @@ const info = {
             stack: [
                 'Router','Sass','ReduxTK', 'React', 'UI/UX'
             ]
+        },
+        portfolio: {
+            title: 'Portfolio',
+            description: 'This repository houses a portfolio website project that features a simple yet sophisticated presentation site with engaging animations and a unique UI/UX design.',
+            link: 'https://github.com/DmytroBaturin/Dmytro',
+            stack: [
+                'Sass','ReduxTK', 'Vite', 'React', 'UI/UX'
+            ]
         }
     },
     about:{
