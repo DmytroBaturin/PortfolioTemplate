@@ -18,7 +18,6 @@ export const Main = () => {
     useEffect(() => {
         const spans = title.current.querySelectorAll('span');
         const buttons = ref.current.querySelectorAll('button');
-        console.log(p)
         const tl = gsap.timeline({
             defaults: { ease: 'power4.out' },
             scrollTrigger: {
