@@ -4,7 +4,7 @@ import {Main} from "./screens/Main";
 import {SelectionsPage} from "./screens/Selections/index.jsx";
 import {ProjectsPage} from "./screens/Projects";
 import {About} from "./screens/About";
-import {useEffect, useState} from "react";
+import {useEffect} from "react";
 import {Footer} from "./components/footer";
 
 function App() {

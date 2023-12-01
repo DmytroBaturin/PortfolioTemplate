@@ -1,4 +1,4 @@
-import React, { forwardRef } from 'react';
+import React from 'react';
 import styles from './index.module.scss';
 import info from "../../info.js";
 

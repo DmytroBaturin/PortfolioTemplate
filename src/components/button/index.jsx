@@ -1,6 +1,6 @@
 import styles from "./index.module.scss"
 
-export const Button = ({text = 'Click', style, img, link}) => {
+export const Button = ({text = 'Click', style, img, link, key}) => {
     const onClick = (e) => {
         if(link){
             return 0
@@ -8,7 +8,7 @@ export const Button = ({text = 'Click', style, img, link}) => {
         e.preventDefault();
     }
     return(
-        <a target='_blank' onClick={(e) => onClick(e)} href={link}>
+        <a key={key} target='_blank' onClick={(e) => onClick(e)} href={link}>
        <button style={style} className={styles.root}>
            {img ? <img style={
                {
