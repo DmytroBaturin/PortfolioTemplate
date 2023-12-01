@@ -6,8 +6,8 @@ import useChangePage from "../../hooks/useChangePage.js";
 export const SelectionsPage = () => {
     const ref = useChangePage(1)
     return(
-      <div id='selections' ref={ref} className={styles.root}>
-          <h1  className={styles.title}>My Tech</h1>
+      <div id='selections'className={styles.root}>
+          <h1  ref={ref}  className={styles.title}>My Tech</h1>
           <div className={styles.container}>
               {
                   Object.values(info.skills).map((skill, index) => (

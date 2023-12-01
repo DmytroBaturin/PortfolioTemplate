@@ -9,13 +9,14 @@ const useChangePage = (page) => {
     useEffect(() => {;
         const options = {
             root: null,
-            rootMargin: '-100px',
-            threshold: 0.3
+            rootMargin: '100px',
+            threshold: 1
         };
 
         const callback = (entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
+                    console.log(entry)
                     dispatch(changeActiveLi({
                         page: page,
                     }))

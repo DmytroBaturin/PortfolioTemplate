@@ -12,10 +12,10 @@ export const ProjectsPage = () => {
     return (
         <div id='projects'  className={styles.root}>
             <div className={styles.title}>
-                <h1  >My projects</h1>
+                <h1 ref={ref} >My projects</h1>
             </div>
             <Swiper
-                ref={ref}
+
                 modules={[Navigation]}
                 className={styles.container}
                 navigation
