@@ -3,6 +3,12 @@ const linkSelections = './assets/images/selections/'
 const linkPlus = './assets/images/plus/'
 
 const info = {
+    mainPageInfo: {
+        h1: 'Hello, i’m Dmytro',
+        h1span: 'FrontEnd Developer.',
+        p: 'I am a young front-end developer who improves my skills every day, both in design and development. Write to me if you need anything',
+        footerEmail: 'dbaturin02@gmail.com',
+    },
     buttons: {
         github: {
             text: 'Github',

@@ -2,9 +2,6 @@ import styles from './index.module.scss'
 import {Avalible} from "../../components/avalible";
 import {Button} from "../../components/button";
 import info from "../../info.js"
-import {useEffect, useRef} from "react";
-import {useDispatch} from "react-redux";
-import {changeActiveLi} from "../../store/headerSlice.js";
 import useChangePage from "../../hooks/useChangePage.js";
 
 export const Main = () => {
@@ -17,7 +14,7 @@ export const Main = () => {
                   </div>
                   <Avalible/>
                   <div className={styles.title}>
-                  <h1>Hello, i’m Dmytro<br /><span>FrontEnd Developer.</span></h1>
+                  <h1>{info.mainPageInfo.h1}<br /><span>{info.mainPageInfo.h1span}</span></h1>
                       <div className={styles.buttons}>
                           {
                      Object.values(info.buttons).map((button) => (
@@ -33,7 +30,7 @@ export const Main = () => {
               </div>
                   <div className={styles.subtitle}>
                       <p>
-                          I am a young front-end developer who improves my skills every day, both in design and development. Write to me if you need anything
+                          {info.mainPageInfo.p}
                       </p>
                   </div>
               </div>
