@@ -10,11 +10,10 @@ import {useEffect, useRef} from "react";
 gsap.registerPlugin(ScrollTrigger)
 
 export const Main = () => {
-
     const title = useRef(null)
     const p = useRef(null)
     const ref = useChangePage(0)
-
+    const avalible = useRef(null)
     useEffect(() => {
         const spans = title.current.querySelectorAll('span');
         const buttons = ref.current.querySelectorAll('button');
@@ -26,7 +25,7 @@ export const Main = () => {
                 toggleActions: "play none none none",
             },
         });
-        tl.fromTo([buttons, p.current, spans],
+        tl.fromTo([buttons, p.current, spans, avalible.current],
             {
                 y: 120,
                 skewY: 7,
@@ -46,12 +45,16 @@ export const Main = () => {
 
 
     return(
-      <div id='main' className={styles.root}>
-          <div ref={ref} className={styles.page}>
+      <div ref={ref} id='main' className={styles.root}>
+          <div  className={styles.page}>
               <div className={styles.container}>
                   <div  className={styles.blur}>
                   </div>
-                  <Avalible/>
+                  <div className={styles.line}>
+                  <Avalible
+                  ref={avalible}
+                  />
+                  </div>
                   <div className={styles.title}>
                       <div ref={title}>
                           <div className={styles.line}>

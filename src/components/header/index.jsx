@@ -1,9 +1,12 @@
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
 import { useSelector } from 'react-redux';
 import styles from './index.module.scss';
+import {gsap} from "gsap";
+import {ScrollTrigger} from "gsap/ScrollTrigger";
 
 export const Header = () => {
     const currentPage = useSelector((state) => state.anim.page);
+    const header = useRef(null)
 
     const goToPage = (elementId) => {
         const element = document.getElementById(elementId);
@@ -16,9 +19,8 @@ export const Header = () => {
             });
         }
     }
-
     return (
-        <div className={styles.root}>
+        <div ref={header} className={styles.root}>
             <div className={styles.header}>
                 <nav>
                     <li onClick={() => goToPage('main')} style={{ opacity: currentPage === 0 ? 1 : 0.2 }}>
