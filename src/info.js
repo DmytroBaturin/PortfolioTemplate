@@ -52,6 +52,10 @@ const info = {
             name: 'HTML',
             img: `${linkSelections}html.svg`,
         },
+        typescript: {
+            name: 'TypeScript',
+            img: `${linkSelections}typescript.svg`,
+        },
         sass: {
             name: 'SASS',
             img: `${linkSelections}sass.svg`,
@@ -102,12 +106,12 @@ const info = {
                 'Router','Sass', 'ReduxTK', 'React', 'MockApi'
             ]
         },
-        ukland: {
-            title: 'UKLAND',
-            description: 'Site for minecraft server, first e-commerce project, with my design',
-            link: 'https://ukland.net/',
+        TSExample: {
+            title: 'TSExample',
+            description: 'TS, Tailwind, Zustand practices...',
+            link: 'https://github.com/DmytroBaturin/TSExample',
             stack: [
-                'Router','Sass','ReduxTK', 'React', 'UI/UX'
+                'Zustand','FSD','TailWind', 'React', 'TypeScript'
             ]
         },
         portfolio: {
