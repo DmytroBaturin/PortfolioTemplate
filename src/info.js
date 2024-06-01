@@ -128,7 +128,7 @@ const info = {
         }
     },
     about:{
-        text: 'Hi! My name is Dmytro, and I\'m 18 years old. I from Ukraine. I\'ve been actively improving my programming skills for two years now and have no plans to stop. Mostly, I work as a frontend developer, but I also do backend development. If you\'re here, it means you need something, so don\'t hesitate, just write to me!'
+        text: 'Hi! My name is Dmytro, and I\'m 19 years old. I from Ukraine. I\'ve been actively improving my programming skills for two years now and have no plans to stop. Mostly, I work as a frontend developer, but I also do backend development. If you\'re here, it means you need something, so don\'t hesitate, just write to me!'
     }
 }
 
