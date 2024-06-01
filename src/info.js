@@ -44,6 +44,10 @@ const info = {
         },
     },
     skills: {
+        NextJS: {
+            name: 'Next JS',
+            img: `${linkSelections}nextjs.svg`,
+        },
         React: {
             name: 'React JS',
             img: `${linkSelections}react-native.svg`,
