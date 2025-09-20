@@ -19,9 +19,9 @@ export const SelectionsPage = () => {
                       </div>
                   ))
               }
+          </div>
           <div className={styles.containerplus}>
-          <h1>What i can else
-              is to make a good design, as far as I'm concerned...</h1>
+              <h1>What I can also do is create clean and effective designs.</h1>
           </div>
               <div className={styles.skillsplus}>
                   {
@@ -34,7 +34,7 @@ export const SelectionsPage = () => {
                       ))
                   }
               </div>
-          </div>
+
       </div>
   )
 }

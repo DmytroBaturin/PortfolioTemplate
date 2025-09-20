@@ -1,13 +1,12 @@
 .root {
   display: flex;
   flex-direction: column;
-  margin-bottom: 10vh;
   height: max-content;
   p{
     font-weight: 300;
     margin-top: 10vh;
     font-size: 24px;
-    width: 50%;
+
   }
 }
 .container{

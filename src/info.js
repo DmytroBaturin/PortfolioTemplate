@@ -4,10 +4,10 @@ const linkPlus = './assets/images/plus/'
 
 const info = {
     mainPageInfo: {
-        h1: 'Hello, i’m Dmytro',
-        h1span: 'FrontEnd Developer.',
-        p: 'I am a young front-end developer who improves my skills every day, both in design and development. Write to me if you need anything',
-        footerEmail: 'dbaturin02@gmail.com',
+        h1: "Hello, I’m Dmytro",
+        h1span: "Front-End Developer.",
+        p: "I’m a front-end developer, constantly improving my skills in both design and development. Feel free to contact me if you need a reliable partner for your project.",
+        footerEmail: "dbaturin02@gmail.com",
     },
     buttons: {
         github: {
@@ -128,7 +128,7 @@ const info = {
         }
     },
     about:{
-        text: 'Hi! My name is Dmytro, and I\'m 19 years old. I from Ukraine. I\'ve been actively improving my programming skills for two years now and have no plans to stop. Mostly, I work as a frontend developer, but I also do backend development. If you\'re here, it means you need something, so don\'t hesitate, just write to me!'
+        text: "Hi! My name is Dmytro, I'm 19 years old and originally from Ukraine. For the past two years I've been actively growing my programming skills and I don’t plan to stop anytime soon. My main focus is frontend development, though I also have experience with backend. If you’re here, it probably means you need something — feel free to reach out!"
     }
 }
 
